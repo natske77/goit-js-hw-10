@@ -54,6 +54,20 @@ function onSearchCountries(e) {
     });
 }
 
+// function createListCountriesMarkup(countries) {
+//   return countries
+//     .map(
+//       country => `
+//         <li class="country-list__item">
+//             <img class="country-list__img" src="${country.flags.svg}" alt="${country.name.official}" />
+//             <p class="country-list__name">${country.name.official}</p>
+//           </a>
+//         </li>
+//     `
+//     )
+//     .join('');
+// }
+
 function createListCountriesMarkup(countries) {
   return countries
     .map(
@@ -61,7 +75,6 @@ function createListCountriesMarkup(countries) {
         <li class="country-list__item">
             <img class="country-list__img" src="${country.flags.svg}" alt="${country.name.official}" />
             <p class="country-list__name">${country.name.official}</p>
-          </a>
         </li>
     `
     )
